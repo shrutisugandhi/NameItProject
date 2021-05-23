@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shrutisugandhi/NameItProject.git/static/css/main.c21be238.chunk.css",
+    "main.js": "/shrutisugandhi/NameItProject.git/static/js/main.066f8877.chunk.js",
+    "main.js.map": "/shrutisugandhi/NameItProject.git/static/js/main.066f8877.chunk.js.map",
+    "runtime-main.js": "/shrutisugandhi/NameItProject.git/static/js/runtime-main.e9e08d34.js",
+    "runtime-main.js.map": "/shrutisugandhi/NameItProject.git/static/js/runtime-main.e9e08d34.js.map",
+    "static/js/2.34b87737.chunk.js": "/shrutisugandhi/NameItProject.git/static/js/2.34b87737.chunk.js",
+    "static/js/2.34b87737.chunk.js.map": "/shrutisugandhi/NameItProject.git/static/js/2.34b87737.chunk.js.map",
+    "index.html": "/shrutisugandhi/NameItProject.git/index.html",
+    "static/css/main.c21be238.chunk.css.map": "/shrutisugandhi/NameItProject.git/static/css/main.c21be238.chunk.css.map",
+    "static/js/2.34b87737.chunk.js.LICENSE.txt": "/shrutisugandhi/NameItProject.git/static/js/2.34b87737.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9e08d34.js",
+    "static/js/2.34b87737.chunk.js",
+    "static/css/main.c21be238.chunk.css",
+    "static/js/main.066f8877.chunk.js"
+  ]
+}
