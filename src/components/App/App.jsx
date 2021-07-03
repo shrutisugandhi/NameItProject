@@ -1,4 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react'
+//import React, { useCallback, useMemo, useState } from 'react'
+
 import Header from '../Header/Header'
 import './App.css'
 import SearchBox from '../SearchBox/SearchBox'
@@ -7,24 +9,24 @@ import debounce  from 'lodash.debounce'
 const name = require('@rstacruz/startup-name-generator')
 const App = () => {
     //Functional based Component dont have state object like class so we use useState hook
-    const [headerText, setHeaderText] = useState('Name It!')
+   // const [headerText, setHeaderText] = useState('Name It!')
     const [headerExpanded, setHeaderExpanded] = useState(true)
     const [suggestedNames, setsuggestedNames] = useState([])
     const [isSuggested, setisSuggested] = useState(true)
 
 
-    // const debounceSave = useMemo(() => {
-    //     () => debounce(eventHandler, 300)
-    //   }, []);
+    const debounceSave = useMemo(() => {
+        (searchVal) => debounce(setsuggestedNames(name(searchVal)), 3000)
+      }, []);
     
     //   const throttledEventHandler = useMemo(() => {
     //     () => throttle(eventHandler, 300)
     //   }, []);
       
-    const debounceSave=useCallback(
-        debounce(searchVal=>setsuggestedNames(name(searchVal)),5000),[]    //alternative is useMemo() which will avoid creating new instance of debounce at each compoent rendering only create instance at initial render
+    // const debounceSave=useCallback(
+    //     debounce(searchVal=>setsuggestedNames(name(searchVal)),5000),[]    //alternative is useMemo() which will avoid creating new instance of debounce at each compoent rendering only create instance at initial render
  
-       );
+    //    );
 
     const handleInputChange = (inputText) => {
      //   console.log('input Text>>', inputText)
