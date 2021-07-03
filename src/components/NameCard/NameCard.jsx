@@ -5,7 +5,7 @@ const nameCheapUrl =
 const NameCard = ({ resultname }) => {
     return (
         <a
-            target="_blank"
+            rel="noreferrer" target="_blank"
             href={`${nameCheapUrl}${resultname}`}
             className="result-name-link"
         >
@@ -16,3 +16,5 @@ const NameCard = ({ resultname }) => {
     )
 }
 export default NameCard
+
+//NameCard

@@ -1,0 +1,46 @@
+index.js ->Entry Point
+index.html has id="root" selector where react components is loaded when application starts on browser
+
+React DOM is library which provide render () to load Initial React component  ->APP component which is loaded inside html id="root" selector inside index.html
+
+React Hooks Helps to provide all those features to function base components which are provided by class based compoents like state 
+handling,JS classes,Lifecycle Methods
+
+ClassBased Component ->Function Based Component
+Js Classes ->JS Functions
+JSX using render method->JSX using only return statement
+State,props -> Hooks (useState)
+Lifecycle Methods => Hooks (useEffect)
+
+
+object is key-value pair
+state ->keyword is provided by react
+
+State is a piece of data(js object) which we need to save which will change or update in future
+props is sort of data which we can use to communicate between components(parents ->child)
+child->parent communication of data is done using callback method
+to update state object in react direct updation is not possible rather setState is used to set state object
+App compoennt is parent of all compoennts
+Direct child->child communication is not possible,First child will send data to parent and parent will transfer that data to another child Component
+useState Hook allow us to use state inside our functional based component in order to update or change data object
+We cant have complex object to maintain state using useState hook
+We cant have single setter function in useState rather to have separate setter functiom for each data
+
+
+React components are reusable eg:navigation menu :-once made are usable at each page
+components -> visual elements we see on screen eg: navbar,header,search
+
+
+
+Browser doesnt understand JSX so it need to transpile to JS using babel for
+browser understanding  by manually configuring babel incase we are not using 
+create-react-app boiler plate which provide entire automated configuration of react
+application as it also have babel,webpack along in its package for components transpilation
+CRA also provides us feature of bundling all js and css file into single file when we have prod build for prod environment of our application
+
+
+
+React.Component provides various features like states,props,lifecycle methods
+
+https://dmitripavlutin.com/react-throttle-debounce/
+https://nodeployfriday.com/posts/react-debounce/

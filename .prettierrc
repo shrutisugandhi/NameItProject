@@ -4,3 +4,6 @@
     "semi": false,
     "singleQuote": true
 }
+
+
+// prettierrc file is written in JSON
