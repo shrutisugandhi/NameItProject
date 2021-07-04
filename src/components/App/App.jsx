@@ -5,7 +5,7 @@ import Header from '../Header/Header'
 import './App.css'
 import SearchBox from '../SearchBox/SearchBox'
 import ResultContainer from '../ResultsContainer/ResultsContainer'
-import debounce  from 'lodash.debounce'
+//import debounce  from 'lodash.debounce'
 const name = require('@rstacruz/startup-name-generator')
 const App = () => {
     //Functional based Component dont have state object like class so we use useState hook
@@ -37,7 +37,7 @@ const App = () => {
       // const debounceSave=debounce(()=>setsuggestedNames(name(inputText)),2000);
        
       
-      debounceSave(inputText);
+     // debounceSave(inputText);
       setisSuggested(inputText);
 
     }
